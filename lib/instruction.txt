@@ -1,0 +1,75 @@
+now before going to ui design,first let make some constant variable
+-create a separate file.
+
+let's create the home page.
+you can delete all the default page in the main.dart file
+
+-lets start working on ui.
+-change the background color and the app bar first.
+-import the constants.dart in our homepage because it has our colors.
+
+-add some demo question
+-now create our question widget
+-add the question widget to the home screen
+-change the styling of the question
+-with that our question widget is ready
+
+-create the next question button
+-add it to the floating action button
+-add some functionality to the button(when you click the next question will show)
+ -if there is an error, fix it by adding the conditions.
+ 
+-add the options
+  -create the custom widget foe the option.
+  -add it to the home screen
+  -make it clickable.
+  -we also need to change the color when clicked.
+  -add some condition to avoid cheating, if the user 
+  has clicked then change the color otherwise do not change the color.
+  -now that is fixed but we have to add a function for when the isPressed value change
+  -now there is a little problem here. 
+  you see that when a user clicks the next button then he can  
+  go to the next question even though he did not select any option
+  we want if the user did not select any option the app will
+  show a message that he has to select at least one option to continue.lets do that.
+
+  - let us add some score to show in our app
+  -add some functionality to increase the value of score.
+  -when the user answers correctly the the score will go up by 1 point.
+      -lets remove the gesture decorator from inside the 
+      option Card and put it in the parent widget
+
+-let's create our dialog box in the separate file    
+
+-let's add a button to start the quiz from start
+  -we need a function to do the working
+  -we will create that in homescreen
+
+-start working on the database
+   -go to 'firebase.google.com'
+   -you have to log in to use firebase services.
+   -once login, click on go to console and then create a project.
+   -once created then click on 'realtime database'
+   -create the database in 'test mode'.
+
+ -let's make separate file for database action.
+   - to connect to the database, firebase has it's own package for flutter, but that'score
+     too advanced subject. so we will use the lightweight 'http' package.
+    -enter 'flutter pub add http' in the terminal
+ -let's start creating our functions .
+ -fire base understands json data  so we have to convert our question to json format
+ -to do that we use another package called 'convert'which is built in dart
+-let's try to add a question in database
+   -create an object for DBconnect class in main.dart and add a question.
+   -hot restart to run the main method.
+   
+-let's fetch data from the database 
+
+-use the same method we used to add questions
+
+-let's add some more data to database.
+let fetch the data
+
+
+
+
